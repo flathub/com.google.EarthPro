@@ -49,8 +49,8 @@ modules:
     sources:
       - type: extra-data
         url: https://dl.google.com/dl/linux/direct/google-earth-pro-stable_7.3.6_amd64.deb
-        size: 57717580
-        sha256: 88e8b1a8e09f08c8daac8e21d803d19203a725e1ff8437a65dc8fba753a12c3e
+        size: 57747518
+        sha256: 81a818556166563f858a7371b658ea5431cd283687a5c67a766dcada31d9b705
         filename: earth.deb
         only-arches: [x86_64]
         x-checker-data:
