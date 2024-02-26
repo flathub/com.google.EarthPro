@@ -1,6 +1,6 @@
 app-id: com.google.EarthPro
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 command: earth-runner
 separate-locales: false
