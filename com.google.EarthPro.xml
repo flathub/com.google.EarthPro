@@ -15,6 +15,7 @@
   <content_rating type="oars-1.1"/>
   <developer_name>Google</developer_name>
   <url type="help">https://support.google.com/earth</url>
+  <launchable type="desktop-id">com.google.EarthPro.desktop</launchable>
 
   <screenshots>
     <screenshot type="default">
