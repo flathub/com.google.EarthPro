@@ -1,6 +1,6 @@
 app-id: com.google.EarthPro
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: earth-runner
 separate-locales: false
@@ -49,8 +49,8 @@ modules:
     sources:
       - type: extra-data
         url: https://dl.google.com/dl/linux/direct/google-earth-pro-stable_7.3.6_amd64.deb
-        size: 57747518
-        sha256: 81a818556166563f858a7371b658ea5431cd283687a5c67a766dcada31d9b705
+        size: 57680838
+        sha256: 5afda33c637b2c2e53df659d5f75b505f198adc5d33564c8d56bfe3e60f480d3
         filename: earth.deb
         only-arches: [x86_64]
         x-checker-data:
