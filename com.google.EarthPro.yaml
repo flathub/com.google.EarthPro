@@ -1,6 +1,6 @@
 app-id: com.google.EarthPro
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: earth-runner
 separate-locales: false
@@ -15,8 +15,9 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
 cleanup:
   - /include
-  - /lib/pkgconfig
-  - /lib/*.a
+  - /lib64/pkgconfig
+  - /lib64/*.a
+  - /lib64/*.la
 modules:
   - name: libglu
     buildsystem: meson
@@ -84,5 +85,6 @@ modules:
       - type: script
         dest-filename: earth-runner
         commands:
+          - export LD_LIBRARY_PATH="/app/lib:/app/lib64:$LD_LIBRARY_PATH"
           - exec /app/extra/google/earth/pro/googleearth $@
 
