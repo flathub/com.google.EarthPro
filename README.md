@@ -4,8 +4,8 @@ Flatpak for Google Earth Pro
 ## Prerequisite
 
 - `flatpak`, `flatpak-builder` packages
-- Runtime `org.freedesktop.Platform` version `23.08`
-- Runtime `org.freedesktop.Sdk` version `23.08`
+- Runtime `org.freedesktop.Platform` version `24.08`
+- Runtime `org.freedesktop.Sdk` version `24.08`
 
 ## Method 1:
 
