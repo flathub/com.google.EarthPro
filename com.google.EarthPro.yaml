@@ -47,7 +47,7 @@ modules:
       - install -Dm644 com.google.EarthPro.xml /app/share/metainfo/com.google.EarthPro.metainfo.xml
       - cp /usr/bin/ar /app/bin/
       - cp /usr/lib/x86_64-linux-gnu/libbfd-*.so /app/lib
-      - ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so/app/lib/libtinfo.so.5
+      - ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so /app/lib/libtinfo.so.5
       - cp -a /usr/lib/$(gcc --print-multiarch)/libsframe.so* ${FLATPAK_DEST}/lib
     sources:
       - type: extra-data
