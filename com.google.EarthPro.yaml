@@ -18,7 +18,6 @@ cleanup:
   - /lib64/pkgconfig
   - /lib64/*.a
   - /lib64/*.la
-  - /lib/debug
 modules:
   - name: libglu
     buildsystem: meson
