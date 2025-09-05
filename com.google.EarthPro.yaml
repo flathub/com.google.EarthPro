@@ -1,6 +1,6 @@
 app-id: com.google.EarthPro
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 command: earth-runner
 separate-locales: false
@@ -87,4 +87,3 @@ modules:
         commands:
           - export LD_LIBRARY_PATH="/app/lib:/app/lib64:$LD_LIBRARY_PATH"
           - exec /app/extra/google/earth/pro/googleearth $@
-
