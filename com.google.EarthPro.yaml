@@ -19,6 +19,15 @@ cleanup:
   - /lib64/*.a
   - /lib64/*.la
 modules:
+
+  - name: libxml2
+    config-opts:
+      - --without-python
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.9.tar.xz
+        sha256: a2c9ae7b770da34860050c309f903221c67830c86e4a7e760692b803df95143a
+        
   - name: libglu
     buildsystem: meson
     sources:
@@ -51,8 +60,8 @@ modules:
     sources:
       - type: extra-data
         url: https://dl.google.com/dl/linux/direct/google-earth-pro-stable_7.3.6_amd64.deb
-        size: 57793756
-        sha256: 2ea9173927c4e76fbbc7e6340c18d8cef54a3b499ecad2cd1ee4bf89af3c15b2
+        size: 57321120
+        sha256: 3f74f02231e2bb473996d4b5a72530f0cf7a0d6e7f93b2523dfe0a47dfb10dbc
         filename: earth.deb
         only-arches: [x86_64]
         x-checker-data:
