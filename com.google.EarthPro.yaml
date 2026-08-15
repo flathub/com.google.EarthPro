@@ -95,4 +95,5 @@ modules:
         dest-filename: earth-runner
         commands:
           - export LD_LIBRARY_PATH="/app/lib:/app/lib64:$LD_LIBRARY_PATH"
+          - export QT_QPA_PLATFORM=xcb
           - exec /app/extra/google/earth/pro/googleearth $@
