@@ -27,7 +27,7 @@ modules:
       - type: archive
         url: https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.9.tar.xz
         sha256: a2c9ae7b770da34860050c309f903221c67830c86e4a7e760692b803df95143a
-        
+
   - name: libglu
     buildsystem: meson
     sources:
@@ -96,4 +96,5 @@ modules:
         commands:
           - export LD_LIBRARY_PATH="/app/lib:/app/lib64:$LD_LIBRARY_PATH"
           - export QT_QPA_PLATFORM=xcb
+          - export BROWSER=xdg-open
           - exec /app/extra/google/earth/pro/googleearth $@
